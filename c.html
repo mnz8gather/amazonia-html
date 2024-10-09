@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      height: 20px;
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-all;
+    }
+
+    .head {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border: 1px solid seagreen;
+    }
+
+    .content {
+      max-width: calc(50% - 27px);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border: 1px solid coral;
+    }
+
+    .operate {
+      flex: 0 0 54px;
+      margin-left: auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border: 1px solid limegreen;
+    }
+  </style>
+  <body>
+    <div style="width: 800px">
+      <div class="container">
+        <div class="head">
+          第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素第一个元素
+        </div>
+        <div class="content">
+          第二个元素第一个元素第一个元素第一个元素第一个元素第二个元素第一个元素第一个元素第一个元素第一个元素第二个元素第一个元素第一个元素第一个元素第一个元素
+        </div>
+        <div class="operate">第三个元素</div>
+      </div>
+    </div>
+  </body>
+</html>

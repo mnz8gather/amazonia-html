@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      width: 100%; /* 确保容器占满整个父元素 */
+    }
+
+    .item {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: content; /* 或者使用具体的尺寸值，例如 '100px' */
+      max-width: 50%;
+    }
+
+    .last-item {
+      flex-grow: 1; /* 尽可能填充所有剩余空间 */
+    }
+  </style>
+  <body>
+    <div style="width: 300px">
+      <div class="container">
+        <div class="item">第一个元素</div>
+        <div class="item">
+          第二个元素第一个元素第一个元素第一个元素第一个元素第二个元素第一个元素第一个元素第一个元素第一个元素第二个元素第一个元素第一个元素第一个元素第一个元素
+        </div>
+        <!-- <div class="last-item"></div> -->
+      </div>
+    </div>
+  </body>
+</html>
